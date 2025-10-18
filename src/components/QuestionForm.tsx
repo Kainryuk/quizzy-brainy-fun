@@ -94,7 +94,7 @@ const QuestionForm = ({ question, onSuccess, mode }: QuestionFormProps) => {
       };
 
       const url = mode === 'create' 
-        ? '/questions'
+        ? '/questions/add'
         : `/questions/${question?.id}`;
 
       const method = mode === 'create' ? 'POST' : 'PUT';
